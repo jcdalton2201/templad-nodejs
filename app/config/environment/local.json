@@ -1,0 +1,51 @@
+{
+    "api_base_uris": {
+        "api_gw": "http://localhost:8081/private/enterprise/adolygiad-app"
+    },
+    "secret_names": {
+        "okta": {
+            "clientId":"",
+            "domain":"",
+            "issuer":"",
+            "redirect":"",
+            "clientSecret":"",
+            "appBaseUrl":"",
+            "tokenURL":"",
+            "userInfoURL":"",
+            "authorizationURL":""
+        },
+        "keycloak": {
+            "clientId":"",
+            "domain":"",
+            "issuer":"",
+            "redirect":"",
+            "clientSecret":"",
+            "appBaseUrl":"",
+            "tokenURL":"",
+            "userInfoURL":"",
+            "authorizationURL":""
+        },
+        "azure": {
+            "appBaseUrl": "",
+            "authorizationURL": "",
+            "applicationId": "",
+            "clientId": "",
+            "objectId": "",
+            "secretValue":"",
+            "clientSecret":"",
+            "domain": "",
+            "issuer": "",
+            "redirect": "",
+            "tokenURL": "",
+            "userInfoURL": "",
+            "identityMetadata":"",
+            "responseType":"",
+            "responseMode": "",
+            "allowHttpForRedirectUrl ":true
+        },
+        "postgres": {
+            "user": "",
+            "password": ""
+        }
+    }
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W-2 Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+        }
+        .w2-form {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #000;
+        }
+        .w2-section {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .w2-section label {
+            font-weight: bold;
+        }
+        .w2-box {
+            display: inline-block;
+            width: 48%;
+            margin-bottom: 10px;
+        }
+        .box-title {
+            font-weight: bold;
+            text-align: center;
+        }
+        .box-value {
+            border-bottom: 1px solid #000;
+            text-align: center;
+            padding: 5px 0;
+        }
+        .w2-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="w2-form">
+    <h2>W-2 Form</h2>
+
+    <!-- Employee Information Section -->
+    <div class="w2-section">
+        <div class="w2-box">
+            <label>Employee's Social Security Number</label>
+            <div class="box-value">{{employee_ssn}}</div>
+        </div>
+        <div class="w2-box">
+            <label>Employer Identification Number (EIN)</label>
+            <div class="box-value">{{employer_ein}}</div>
+        </div>
+    </div>
+
+    <div class="w2-section">
+        <div class="w2-box">
+            <label>Employee's Name</label>
+            <div class="box-value">{{employee_name}}</div>
+        </div>
+        <div class="w2-box">
+            <label>Employee's Address</label>
+            <div class="box-value">{{employee_address}}</div>
+        </div>
+    </div>
+
+    <!-- Wages and Taxes Section -->
+    <div class="w2-section">
+        <div class="w2-box">
+            <label>Wages, Tips, Other Compensation</label>
+            <div class="box-value">{{wages}}</div>
+        </div>
+        <div class="w2-box">
+            <label>Federal Income Tax Withheld</label>
+            <div class="box-value">{{federal_tax_withheld}}</div>
+        </div>
+    </div>
+
+    <div class="w2-section">
+        <div class="w2-box">
+            <label>Social Security Wages</label>
+            <div class="box-value">{{ss_wages}}</div>
+        </div>
+        <div class="w2-box">
+            <label>Social Security Tax Withheld</label>
+            <div class="box-value">{{ss_tax_withheld}}</div>
+        </div>
+    </div>
+
+    <div class="w2-section">
+        <div class="w2-box">
+            <label>Medicare Wages and Tips</label>
+            <div class="box-value">{{medicare_wages}}</div>
+        </div>
+        <div class="w2-box">
+            <label>Medicare Tax Withheld</label>
+            <div class="box-value">{{medicare_tax_withheld}}</div>
+        </div>
+    </div>
+
+    <!-- Employer Information Section -->
+    <div class="w2-section">
+        <div class="w2-box">
+            <label>Employer Name</label>
+            <div class="box-value">{{employer_name}}</div>
+        </div>
+        <div class="w2-box">
+            <label>Employer Address</label>
+            <div class="box-value">{{employer_address}}</div>
+        </div>
+    </div>
+
+    <!-- Additional Information Section -->
+    <div class="w2-section">
+        <div class="w2-box">
+            <label>State Wages, Tips, etc.</label>
+            <div class="box-value">{{state_wages}}</div>
+        </div>
+        <div class="w2-box">
+            <label>State Income Tax</label>
+            <div class="box-value">{{state_tax}}</div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
